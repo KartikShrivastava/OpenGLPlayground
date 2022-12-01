@@ -51,6 +51,7 @@ int main(int argc, char** argv) {
 		glUseProgram(engine.shaderProgram);
 		glBindVertexArray(engine.shapeVAO);
 
+		// DrawArrays method is used when we dont use indices for drawing triangles
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 
 		glfwSwapBuffers(window);
